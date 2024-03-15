@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.boxtyping{
+    margin: 10% 10% 10% 10%;
+}
+
+h1{
+    display: block;
+    font-size: 30px;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 32ch;
+    animation: typing 2s steps(12), 
+    blink .25s infinite step-end alternate;
+    overflow: hidden;
+}
+
+
+@keyframes typing{
+    from {width: 0%}
+    to {width: 50%}
+ 
+}
+
+@keyframes blink{
+    50% { border-color: transparent}
+}
+
+@media (min-width: 50%) {
+  span {
+    white-space: normal; /* Cambia el modo de espaciado de líneas a "normal" cuando se alcanza la altura máxima */
+  }
+}
